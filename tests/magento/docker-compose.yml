@@ -1,0 +1,21 @@
+version: "2"
+
+services:
+  nginx:
+    image: $IMAGE
+    environment:
+      NGINX_BACKEND_HOST: magento
+      NGINX_VHOST_PRESET: magento
+    depends_on:
+      - magento
+    volumes:
+      - codebase:/var/www/html
+  magento:
+    image: wodby/magento
+    environment:
+      WODBY_APP_NAME: test
+    volumes:
+      - codebase:/var/www/html
+
+volumes:
+  codebase:

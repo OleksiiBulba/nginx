@@ -16,10 +16,11 @@
     - [HTML](#html)
     - [HTTP proxy (application server)](#http-proxy-application-server)
     - [Django](#django)
-    - [PHP-based (FastCGI)](#PHP-based-fastcgi)
+    - [PHP-based (FastCGI)](#php-based-fastcgi)
         - [PHP](#php)
         - [WordPress](#wordpress)
         - [Drupal](#drupal)
+        - [Magento](#magento)
     - [Custom preset](#custom-preset)
     - [No preset](#no-preset)
 - [Orchestration actions](#orchestration-actions)
@@ -309,6 +310,12 @@ Overridden default values:
 [Drupal 8]: https://github.com/wodby/nginx/blob/master/templates/presets/drupal8.conf.tmpl
 [Drupal 7]: https://github.com/wodby/nginx/blob/master/templates/presets/drupal7.conf.tmpl
 [Drupal 6]: https://github.com/wodby/nginx/blob/master/templates/presets/drupal6.conf.tmpl
+
+#### Magento
+
+- [Preset template](https://github.com/wodby/nginx/blob/master/templates/presets/magento.conf.tmpl)
+- Usage: add `NGINX_VHOST_PRESET=magento`, optionally modify `NGINX_BACKEND_HOST`
+- ...
 
 #### Custom preset
 
